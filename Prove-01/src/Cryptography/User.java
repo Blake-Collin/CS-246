@@ -34,5 +34,4 @@ public class User {
   public String setHashedPassword(String pHash) {
     return hash;
   }
-
 }
