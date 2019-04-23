@@ -7,6 +7,10 @@ public class User {
   private String salt;
   private String hash;
 
+  public User(String pPassword) {
+    password = pPassword;
+  }
+
   public String getPassword() {
     return password;
   }
