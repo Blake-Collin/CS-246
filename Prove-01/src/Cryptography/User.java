@@ -7,10 +7,14 @@ public class User {
   private String salt;
   private String hash;
 
+  // Constructors
+  public User() {}
+
   public User(String pPassword) {
     password = pPassword;
   }
 
+  // Getters & Setters
   public String getPassword() {
     return password;
   }
@@ -31,7 +35,7 @@ public class User {
     return hash;
   }
 
-  public String setHashedPassword(String pHash) {
-    return hash;
+  public void setHashedPassword(String pHash) {
+    hash = pHash;
   }
 }
