@@ -1,5 +1,13 @@
 package Cryptography;
 
+/**
+ * The User class is a simple class that holds the password, * salt, and hashed password for a given
+ * user.
+ *
+ * @author Collin Blake
+ * @version 1.0
+ * @since 04-23-2019
+ */
 public class User {
 
   // variables

@@ -3,6 +3,14 @@ package Cryptography;
 // Imports
 import java.util.Scanner;
 
+/**
+ * The Test class is designed for testing the interactions between
+ * the {@link User} and {@link NSALoginController} classes.
+ *
+ * @author Collin Blake
+ * @version 1.0
+ * @since 04-23-2019
+ */
 public class Test {
 
   // Variables
