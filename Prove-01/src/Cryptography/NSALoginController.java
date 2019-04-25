@@ -117,8 +117,15 @@ public final class NSALoginController {
     // Catch if password doesn't meet standards of at least 8 characters and at least one number
     // I am using regex to check if there is a number inside the password not sure if we are allowed
     // to do this.
-    if (user.getPassword().length() < 8 || !(user.getPassword().matches("(.)*(\\d)(.)*"))) {
-      throw new WeakPasswordException("Password doesn't meet security standards!");
+
+    // Length check
+    if (user.getPassword().length() < 8) {
+      throw new WeakPasswordException("Password is too short!");
+    }
+
+    // Digit Check
+    if (!(user.getPassword().matches("(.)*(\\d)(.)*"))) {
+      throw new WeakPasswordException("Password is missing a number!");
     }
 
     // Get the next random salt value to use for this password

@@ -4,11 +4,10 @@ package Cryptography;
 import java.util.Scanner;
 
 /**
- * The Test class is designed for testing the interactions between
- * the {@link User} and {@link NSALoginController} classes.
+ * The Test class is designed for testing the interactions between the {@link User} and {@link
+ * NSALoginController} classes.
  *
  * @author Collin Blake
- * @version 1.0
  * @since 04-23-2019
  */
 public class Test {
@@ -17,6 +16,13 @@ public class Test {
   private static Scanner scanner = new Scanner(System.in);
 
   // Main Function
+
+  /**
+   * Main Test Function
+   *
+   * @author Collin Blake
+   * @param args
+   */
   public static void main(String args[]) {
     // Get User Password
     System.out.print("Enter Password: ");
@@ -34,7 +40,7 @@ public class Test {
         NSALoginController.hashUserPassword(user);
         break;
       } catch (WeakPasswordException e) {
-        //Output error and get new password
+        // Output error and get new password
         System.out.println("\n" + e.getMessage());
         System.out.print("Enter New Password: ");
         password = scanner.next();
@@ -50,24 +56,35 @@ public class Test {
     System.out.println("\nAfter");
     printUserValues(user);
 
-    // Verify Password with User
-    System.out.print("\nEnter Password For Verification: ");
-    password = scanner.next();
+    //Loop for verification
+    while (true) {
+      // Verify Password with User
+      System.out.print("\nEnter Password For Verification: ");
+      password = scanner.next();
 
-    // Verify Password
-    user.setPassword(password);
-    try {
-      if (NSALoginController.verifyPassword(user)) {
-        System.out.println("Password Verification Successful!");
-      } else {
-        System.out.println("Password Verification Failed!");
+      // Verify Password
+      user.setPassword(password);
+      try {
+        if (NSALoginController.verifyPassword(user)) {
+          System.out.println("Password Verification Successful!");
+          break;
+        } else {
+          System.out.println("Password Verification Failed!\nPlease try again!");
+        }
+      } catch (Exception e) {
+        e.printStackTrace();
+        break;
       }
-    } catch (Exception e) {
-      e.printStackTrace();
     }
   }
 
   // Output User information
+
+  /**
+   * Output the {@link User} information to remove repeating code
+   *
+   * @param user
+   */
   public static void printUserValues(User user) {
     System.out.println("Password: " + user.getPassword());
     System.out.println("Salt: " + user.getSalt());

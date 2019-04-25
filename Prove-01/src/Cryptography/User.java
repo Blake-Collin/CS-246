@@ -5,7 +5,6 @@ package Cryptography;
  * user.
  *
  * @author Collin Blake
- * @version 1.0
  * @since 04-23-2019
  */
 public class User {
