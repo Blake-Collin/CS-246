@@ -1,0 +1,30 @@
+Enter Password: monkey
+
+Before
+Password: monkey
+Salt: null
+Hash: null
+
+Password is too short!
+Enter New Password: monkeymonkey
+
+Password is missing a number!
+Enter New Password: monkey25
+
+After
+Password:
+Salt: tEuNO90wT8HqFX38xXP7KA==
+Hash: sQ1JnPkB4A6VNxFQkwtadq7E3+/w+kVvxMFjeaYBJuI=
+
+Enter Password For Verification: monkey
+Password Verification Failed!
+Please try again!
+
+Enter Password For Verification: monkeymonkey
+Password Verification Failed!
+Please try again!
+
+Enter Password For Verification: monkey25
+Password Verification Successful!
+
+Process finished with exit code 0
