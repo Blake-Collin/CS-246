@@ -1,16 +1,32 @@
+/**
+ *
+ * @author Collin Blake
+ * @since 4-29-2019
+ */
 public class Cruise implements Expense {
 
   // Variable
   private Destination destination;
 
+  /**
+   * Cruise class constructor that will save the destination and
+   * hold getCost function from Interface Expense
+   *
+   * @param destination
+   */
   Cruise(Destination destination) {
     this.destination = destination;
   }
 
+  /**
+   * This getCost will calculate the cost based on the destination in question.
+   *
+   * @return float cost
+   */
   public float getCost() {
     float cost = 0;
 
-    //Switch for each destination
+    // Switch for each destination
     switch (destination) {
       case Mexico:
         cost = 1000;
