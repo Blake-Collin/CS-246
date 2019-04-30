@@ -1,5 +1,7 @@
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class VacationCalculator {
 
@@ -11,7 +13,9 @@ public class VacationCalculator {
     float japanCost = vc.calculateVacationCost(Destination.Japan);
 
     // Print the cost...
-    System.out.println("Cost for a Vacation to Japan: " + japanCost);
+    System.out.println(
+        "Cost for a Vacation to Japan: "
+            + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(japanCost));
   }
 
   /**
@@ -24,12 +28,12 @@ public class VacationCalculator {
     // Create List for expenses
     ArrayList expenses = new ArrayList<Expense>();
 
-    //Cruise Cost
+    // Cruise Cost
     expenses.add(new Cruise(dest));
 
-    //Other Costs to be added.
+    // Other Costs to be added.
 
-    //Call tallyExpenses and return value
+    // Call tallyExpenses and return value
     return tallyExpenses(expenses);
   }
 
