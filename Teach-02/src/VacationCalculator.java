@@ -30,11 +30,14 @@ public class VacationCalculator {
 
     // Print the cost...
     System.out.println(
-        "\nJapan Cost: " + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(japanCost));
+        "\nJapan Cost: "
+            + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(japanCost));
     System.out.println(
-        "Mexico Cost: " + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(mexicoCost));
+        "Mexico Cost: "
+            + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(mexicoCost));
     System.out.println(
-        "Europe Cost: " + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(europeCost));
+        "Europe Cost: "
+            + NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(europeCost));
   }
 
   /**

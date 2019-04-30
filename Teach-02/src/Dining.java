@@ -7,8 +7,8 @@
 public class Dining implements Expense {
 
   // Variables
-  int days;
-  Destination destination;
+  private int days;
+  private Destination destination;
 
   Dining(int pDays, Destination pDestination) {
     days = pDays;
