@@ -1,0 +1,7 @@
+Please Input Desired Vacation Days: 5
+
+Japan Cost: $4,695.00
+Mexico Cost: $1,550.00
+Europe Cost: $3,110.00
+
+Process finished with exit code 0
