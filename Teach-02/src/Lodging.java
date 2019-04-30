@@ -1,16 +1,16 @@
 /**
- * Dining Expenses based on days and location
+ * Lodging Expenses based on days and location
  *
  * @author Collin Blake
  * @since 4-29-2019
  */
-public class Dining implements Expense {
+public class Lodging implements Expense {
 
   // Variables
-  int days;
-  Destination destination;
+  private int days;
+  private Destination destination;
 
-  Dining(int pDays, Destination pDestination) {
+  Lodging(int pDays, Destination pDestination) {
     days = pDays;
     destination = pDestination;
   }
@@ -18,7 +18,7 @@ public class Dining implements Expense {
   /**
    * This getCost will calculate the cost based on the destination in question and days spent there
    *
-   * @return cost of the dining
+   * @return cost of the lodging
    */
   public float getCost() {
     float cost = 0;
@@ -26,15 +26,13 @@ public class Dining implements Expense {
     // Switch for each destination
     switch (destination) {
       case Mexico:
-        cost = 10 * days;
+        cost = 100 * days;
         break;
       case Europe:
-        cost = 20 * days;
-        cost *= 1.1;
+        cost = 200 * days;
         break;
       case Japan:
-        cost = 30 * days;
-        cost *= 1.3;
+        cost = 300 * days;
         break;
       default:
         cost = 0;

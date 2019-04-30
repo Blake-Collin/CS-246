@@ -1,4 +1,6 @@
 /**
+ * Class to hold and calculate the cost of a Cruise to a specific location
+ *
  * @author Collin Blake
  * @since 4-29-2019
  */
@@ -11,10 +13,10 @@ public class Cruise implements Expense {
    * Cruise class constructor that will save the destination and hold getCost function from
    * Interface Expense
    *
-   * @param destination is the Destination of the cruise
+   * @param pDestination is the Destination of the cruise
    */
-  Cruise(Destination destination) {
-    this.destination = destination;
+  Cruise(Destination pDestination) {
+    destination = pDestination;
   }
 
   /**
