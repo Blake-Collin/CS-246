@@ -2,6 +2,11 @@ package prove02;
 
 import java.awt.Color;
 
+/** Zombie Class that attacks anything not a plant or flying
+ *
+ * @author Collin Blake
+ * @since 5-2-2019
+ */
 public class Zombie extends Creature implements Movable, Aggressor {
 
   private int direction;

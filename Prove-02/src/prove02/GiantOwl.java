@@ -5,18 +5,18 @@ import java.awt.Color;
 import java.util.Random;
 
 /**
- * Keep
+ * GiantOwl will look for Zombies but is not hunting
  *
  * @author Collin Blake
  * @since 5-2-2019
  */
-
 public class GiantOwl extends Creature implements Movable, Flying {
 
   // Variables
   Random _rand = new Random();
   private Direction direction;
   private int counter;
+  private int maxCounter;
 
   public GiantOwl() {
     direction = Direction.values()[_rand.nextInt(4)];
@@ -47,17 +47,17 @@ public class GiantOwl extends Creature implements Movable, Flying {
     }
   }
 
-  /**
-   * Owl will travel in 5 step straight lines.
-   */
+  /** Owl will travel in random direction for a random amount of time before switching directions */
   @Override
   public void move() {
-    //New Random Direction once we have traveled 5
-    if(counter > 4) {
+    // New Random Direction once we have traveled our random max
+    if (counter > maxCounter) {
       direction = Direction.values()[_rand.nextInt(4)];
+      maxCounter = _rand.nextInt(10);
       counter = 0;
     }
-    //Move
+
+    // Move
     switch (direction) {
       case RIGHT:
         _location.x++;
@@ -75,8 +75,7 @@ public class GiantOwl extends Creature implements Movable, Flying {
         break;
     }
 
-    //Increase Counter
+    // Increase Counter
     counter++;
-
   }
 }

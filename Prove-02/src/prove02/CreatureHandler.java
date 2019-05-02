@@ -142,12 +142,14 @@ public class CreatureHandler {
         a.attack(target);
       }
 
+      //Add behavior for flying creatures
       if (c instanceof Flying) {
         Creature target = getTarget(c, 0, 0);
         Flying a = (Flying) c;
         ((Flying) c).swoop(target);
       }
 
+      //Add spawner behavior
       if (c instanceof Spawner) {
         Creature c2 = ((Spawner) c).spawnNewCreature();
         if (c2 != null) {
@@ -156,6 +158,7 @@ public class CreatureHandler {
       }
     }
 
+    //Add new Creatures to the list of active Creatures.
     _creatures.addAll(newCreatures);
 
   }
