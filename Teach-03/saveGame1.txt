@@ -1,0 +1,1 @@
+{"name":"Yojimbo","health":100,"mana":100,"gold":25143,"equipment":{"Longsword":100,"Shield":50,"Plate Mail":300,"Necklace of Fireballs":35000,"Boots of Springing/Striding":3500}}
