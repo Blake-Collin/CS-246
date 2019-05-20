@@ -18,7 +18,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
- * Contains all test functions for our weather objects conditions, forecast etc.
+ * Created 
  *
  * @author Collin Blake
  * @since 5-7-2019
@@ -89,19 +89,19 @@ public class Main {
 
     // Comparators for WeatherForecastItems
     Comparator<WeatherForecastItem> compareWindSpeed =
-        Comparator.comparing((WeatherForecastItem item) -> item.wind.get("speed"));
+        Comparator.comparing((WeatherForecastItem item) -> item.getWind().get("speed"));
     Comparator<WeatherForecastItem> compareTemp =
-        Comparator.comparing((WeatherForecastItem item) -> item.measurements.get("temp"));
+        Comparator.comparing((WeatherForecastItem item) -> item.getMeasurements().get("temp"));
 
     // Get highest
     for (WeatherForecast item : cities) {
       // Highest Windspeed
-      item.list.sort(compareWindSpeed.reversed());
-      cityWindSpeeds.put(item.city.name, item.list.get(0).wind.get("speed"));
+      item.getList().sort(compareWindSpeed.reversed());
+      cityWindSpeeds.put(item.getCity().getName(), item.getList().get(0).getWind().get("speed"));
 
       // Highest Temp
-      item.list.sort(compareTemp.reversed());
-      cityTemps.put(item.city.name, item.list.get(0).measurements.get("temp"));
+      item.getList().sort(compareTemp.reversed());
+      cityTemps.put(item.getCity().getName(), item.getList().get(0).getMeasurements().get("temp"));
     }
 
     //LinkedHashMaps for Sorted Maps

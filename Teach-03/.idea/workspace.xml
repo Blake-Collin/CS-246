@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af8e6f2a-b80b-4016-a1e8-9641e0a9b10a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/CityInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/WeatherForecast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/WeatherForecastItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prove-03/src/prove03/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prove-03/src/prove03/WeatherConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prove-03/src/prove03/WeatherConditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teach03/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teach03/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="154">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#371#372#0" expanded="true" />
@@ -83,7 +78,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
@@ -186,7 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1557190769243</updated>
       <workItem from="1557190772715" duration="3913000" />
-      <workItem from="1557271937358" duration="816000" />
+      <workItem from="1557271937358" duration="827000" />
     </task>
     <task id="LOCAL-00001" summary="Teach03">
       <created>1557195019162</created>
@@ -199,10 +194,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4729000" />
+    <option name="totallyTimeSpent" value="4740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -252,7 +248,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teach03/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -262,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teach03/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="154">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#371#372#0" expanded="true" />
