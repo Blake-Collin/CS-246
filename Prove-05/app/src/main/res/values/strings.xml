@@ -1,3 +1,9 @@
 <resources>
   <string name="app_name">Prove-05</string>
+  <string name="title_book">Book Name:</string>
+  <string name="chapter_number">Chapter Number:</string>
+  <string name="verse_number">Verse Number:</string>
+  <string name="button_send">Send</string>
+  <string name="button_load">Load Scripture</string>
+  <string name="button_save">Save Scripture</string>
 </resources>
