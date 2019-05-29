@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">Prove-06</string>
+<string name="countOdd">Count by Odds</string>
+<string name="countEven">Count By Evens</string>
+</resources>
